@@ -33,5 +33,10 @@ namespace challengerGit.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        private void thisDoesNothing()
+        {
+            Debug.WriteLine("called from thisDoesNothing()");
+        }
     }
 }
